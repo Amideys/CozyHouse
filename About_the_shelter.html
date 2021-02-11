@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Сommon_styles.css">
+    
+    <title>CozyHouse-shelter for pets in Boston</title>
+</head>
+<body>
+    <div class="Wrapper">
+        <header class="Header start_screen">
+            <div class="Container">
+                <div class="Header_contant">
+                    <div class="Header_logo logo">
+                        <p class="Title" id="Title">Cozy House</p>
+                        <p class="Subtitile" id="Subtitile">Shelter for pets in Boston</p>
+                    </div>
+                    <div class="Gamburger_menu" onclick="myFunction(this)">
+                            <div class="bar1 bar-1"></div>
+                            <div class="bar2 bar-2"></div>
+                            <div class="bar3 bar-3"></div>
+                        <div class="Change_box">
+                            <ul class="menu__box" >
+                                <li><a class="menu__item" href="About_the_shelter.html" title="About the shelter">About the shelter</a></li>
+                                <li><a class="menu__item" href="Our_pets.html" title="Our_pets">Our pets</a></li>
+                                <li><a class="menu__item" href="About_the_shelter.html#Help" title="Help the shelter">Help the shelter</a></li>
+                                <li><a class="menu__item" href="Contacts.html" title="Help the shelter">Contacts</a></li>
+                            </ul>
+                            </div>
+                      </div>
+                    <nav class="Header_navigation navigation">
+                        <div class="Navigation_wrap">
+                            <div class="Navigation_contact">
+                                <ul class="Navigation_menu" id="Navigation_menu">
+                                    <li><a href="About_the_shelter.html" class="Navigation_link" title="About the shelter">About the shelter</a></li>
+                                    <li><a href="Our_pets.html" class="Navigation_link" title="Our pets">Our pets</a></li>
+                                    <li><a href="About_the_shelter.html#Help" class="Navigation_link" title="Help the shelter">Help the shelter</a></li>
+                                    <li><a href="Contacts.html" class="Navigation_link" title="Contacts">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="Start_screen_content">
+                    <div class="Content">
+                        <h3 class="Heading_left">Not only people <br> need a house</h3>
+                        <div class="Subheading">We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
+                                                He or she will love you more than anybody else in the world, you will see!</div>
+                        <input type="button" class="Button_primary" value="Make a friend">
+                    </div>
+                    <div class="start_screen_puppy"></div>
+                </div>
+            </div>
+        </header>
+        <main class="Main" id=Main>
+            <section class="About" id="About">
+                <div class="Container Container_about">
+                    <div class="Container_about_pets">
+                        <div class="About_pets_img"></div>
+                        <div class="Text_about">
+                            <h3 class="Left_heading">About the shelter<br>&#34;Cozy House&#x22;</h3>
+                            <div class="Subheading_about"><p>Currently we have 121 dogs and 342 cats on our hands and
+                                <br> statistics show that only 20&#37; of them will find a family.
+                                <br> The others will continue to live with us and will be waiting for a lucky
+                                <br> chance to become dearly loved.</p>
+                            </div>
+                            <div class="Subheading_about"><p>We feed our wards with the best food and make sure that they 
+                                <br> do not get sick, feel comfortable &#40;including psychologically&#41; and
+                                <br> well. We are supported by 87 volunteers and 28 employees of
+                                <br> various skill levels. About 12&#37; of the animals are taken by the
+                                <br> shelter staff. Taking care of the animals, they become attached
+                                <br> to the pets and would hardly ever leave them alone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Pets" id="Pets">
+                <div class="Container">
+                    <h3 class="Heading_center">Our friends who<br>are looking for a house</h3>
+                    <div class="Container_cards">
+                        <div class="Card card-1" id="Anchor1">
+                            <div class="Pets_image"><img src="Images/pets-katrine.png" alt="pets-katrine" title="Katrine"></div>
+                            <p class="Name_pets">Katrine</p>
+                            <input type="button" class="Button_for_card btn" value="Learn more">
+                        </div>
+                        <div class="Card card-2">
+                            <div class="Pets_image"><img src="Images/pets-jennifer.png" alt="pets-jennifer" title="Jennifer"></div>
+                            <p class="Name_pets">Jennifer</p>
+                            <input type="button" class="Button_for_card btn" value="Learn more">
+                        </div>
+                        <div class="Card card-3">
+                            <div class="Pets_image"><img src="Images/pets-woody.png" alt="pets-woody" title="Woody"></div>
+                            <p class="Name_pets">Woody</p>
+                            <input type="button" class="Button_for_card btn" value="Learn more">
+                        </div>
+                    </div>
+                    <div class="Pets_primery_button"><a href="Our_pets.html" title="Go to page (Our pets)">Get to know the rest</a></div>
+                </div>
+            </section>
+            <section class="Help" id="Help">
+                <div class="Container">
+
+                       <!--Загружаем на страницу спрайт SVG-->
+                    <h3 class="Heading_center">How you can help <br> our shelter</h3>
+                    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="300" viewBox="0 0 500 300 ">
+                        <image id="Icon_1" data-name="Icon_1"  width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA8CAYAAAAgwDn8AAAEZUlEQVRoge1a7VHbQBBdM/yX6cCpIPaoAOQCNEAFtisIVEBcAUkFQAWYUQE2BWhQKsAdYFWQzGmexGp1J51O/mLC+2Nbd7p7q/28lXtkQBpHfSJ6I6K+ac6esCGib54fbnTbndRwGB4BeQKHoWmwToBPgVNLkivPD8f7FCiNoyURBU3zPr0GvgQ4NP4bJx6kcfRzx1wqe9pMshaAiG678dkN6kxockQ8jVzqNHDJvi+I6M92OTXiO+OgPme6G7S1UBpH6oYndunMVIvsCqjF3tnyV54fLuR2JhPiKlvsm7wC9uSEtWZUEQCSc/N53glDO/C9L8GtBJ0GOPmN54cPh2KPvbn2L+UcnRP/YN8rNmeDNI6G2OyciF5QDK4c5VAcpoxb6YGWNJDG0UDU3r8dyN8R0SvyRoDPZRpH944CcA5DcCwgTWjKvq89P0xaklfZ+towPIVwrQAOawPHigDc0x/bbibMT206JyL+EK51jmgBzqUUjQoB0jgKRP3RynlxPyc38vxQaWQsHNF4PKwB5zLAXmUBhGSJ54fruhWbkOcOfHbKI+DCNVlw5VGIh6iK88J57sQ8FVluYKeJmP+EdSZCs2vL9STUWnkgKEqLEyw2FeovhU+ExVdNHA4QYYZ40lzVau5SOJ0Kp2ub9TQCcE59cC5M6IJP1JQOdzUtlj6rm26kJhjU9auW6xXQlBYZ5xNN6VCKPlA17w7MPT/sgWyOAdPCGNEnT1wJfo/VeJv1NMJxbllp0YMqcttSpcOZECCAKWTAZvnYK4sqY5ts23W9NI7emfZmJ0j3OXSlQ8mc8ieDT5eQ2HU9zvG8J6Se6Yq3NI7eRCRZidZjSXMgw/PCgkeWtusJLtxiklMhtSn23wjHkh2zOX34y71m/DaNIx4irdYzgHMclkoJkw3jJDTTJKQNSP1iodHUDuQht3E9E3vJUZnQXzZobLfTx2EngNYSxPUNVR2QMJ7gmtTyCBHJuF4Dj4JzKwFqFuR2SfIpNo077Fdw3lZnjifClSSHwMCDw8SxKq2gkwDKnhFReCJ8MUznSSjzF0OyagVnARBxlpoWoCmZSdvO7u8qRBcN3It65qEuGyN8joUp9YVvtIaTAJp6RjnlrKmUUONqnuiyDbtowVUDnPy6bUSBU/OqtdIusYWrAJUDigO20jBzFYCTturja8BDrzNcBeC2rmr3SisFITbQ2TcSG7/u1ECjLplY8xp0hVg/MJyDH2H3F+KYqRoIozakOWfbNzQ6zFC85aE0qCnkTG94Nqa+vy2c8wBaHeOaMzA1OHh2f9vun0QXDeTJaQSbPmdmo64/qnHkjCk7+amn/rytrvdWqtF9YxfV6MHwJcCh0cmJc7CckOQNLPp42ymr1q2iswbQqMrjvzz/Tnb9r69tmBDvTMs2uMtLklb4CqOHhu4t5VFD95aS1ytPxywEWjG8Jbnu4dXoUf4XyALzzGk1bcHPgOwckfkADhSqI7z3f6U4QHFUb3VGRET/AF9d/u8kQQ6bAAAAAElFTkSuQmCC"/>
+                        <image id="Icon_2" data-name="Icon_2"  width="59" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA8CAYAAADYIMILAAAFaUlEQVRoge1b7ZHaSBBtb/k/OALjDHARgJcAKC8RGCJYiIAjAnAEiyPYdSmAxQGolotguQhOyuBqqDf40R7NB0iHfHWvilqQRtPT6u+e2TfSYpR51hORF6zwY2cw2l+y2ps2MysihtkuPr1LJ2s7s7Xi7bUXoFR13BmMtnS7qPhunrsVkUf8jFLxNkiWVfW5zLOJvdEZjHYiMjUffD8AY55TVfzqzEKSa7r0RQ0xEtuXedatGLNW2lCJ1nhjSMsw8U1EjBQXInKnhhmm5iLSt2M7g9EmlkbrQg+YfggMm6YwadEqZuF0numSkeQPfP8kIrd0bxirvhZX98YKLNFfpKekbv5+SJm8NXG2zLM+edWNS01xzV7v4ZlotCmpYGf01TOO72kH5sW/YrOwxdvAMLbJZWDsAn/ZpjVMErLl+Nwos2We3cG2uhHDm8IWmVnRmBpTOndNRgXacvDwjUm2zLMXBH9BhvS9KVoerGgN00aYRXL/ip/Gs06boJO4jqem4iwn5t9SHkQObKWxt9UMFm7n3RkbDM1lni3zbAtV7rcqqUDcfGY7L/PMFgkzGlqUeTZkT+vBDzDba1NS0dWMAjPFqFA5mOT82pZU2MWbLGnsKN6nlEF1U5OKVjALCX2mS8vOYPSEUs9ih3SRE47PKdK9OrPkMVlKj2WerVTWdYtrj3TNPPOKOYJIdlDIiu4j0r9YLBx22iePzNC2K3h2ARX3IkmyKLEea2RUOJyYxpm6VyAhWSv7FYy1ah5V/URLFqrC9aavcO7GLoDQU72lHQr0AvSX8NZ23i/0ooIxVxLVmG3K2xZxdBx8sHGwq9R0yYmD+Q6Grc3y2KrK5wQpamzfenFO/6cKncHoDwonFgW88QlwTUtxgzmCiGIWKmzV55dF1IyD+nqmHKqQFI1YybIKN1G92Mb4HnZayQzuMcOTqrEasczagO9Ur0sA+7ZYRib4Bbdn1BznM4sMxU7WtAqnbEkmb1/GSLZpFeZF660PH3hsFOMxzHLOmtSUjgHqVbvYCW9sGa0q8+wBHy77JmznsZvU3jgLAlayTzH2dCbmFD8NY/cIMX1KJe/KPNs5EpZ5LMmQZJtW4QPg9Di37VOiYWF9BzM6TXGYIWZZhRt1TkhUhkgwrFraXbs5mdAeY4apyU0oXTx64QZV+AhsVFX5hXXF9WhUMgsnYNVoHxvLAFa1fplnl64zhB0VDAfarsTkhFk4pBnUlxfs6gPFYtU0pzCxMZ/PKPPso2b4yKyrs/dfw1v5megzowXe1vfYWvHKOEgQfeJDA8Cnxivu7F2rg18HfEWEDT02nm5/Z0ZDuFFeNmmr4neDTiouOgjZdvx/dtEHisWfaJjRiK+RG01nARHjXsX/HejWVuIdgazqFU3pW/qY6y/o2DfB6ATJwkzRnWFHoL6Gm/xsfTyoWLxVdj6rm2HHuYy9g+6izLNghpciWW6Qm17Ru85gZCqPD2rHbRa79xICTIbpzg09ojsluqsQ3RuVITmTfaiRnWip+7SoKcd0aSH1gLcxDd21ortRdfC9g+rRt7wBM3/TpK4Si7f431WVe3RopDi3t3sm3VeM03S5q3E8UzEndfGVckWgrt1SK6XOza9tgO6eDmm76JpnlwebhTqMI6QRqohSN7NiEZq3al0FdTV2UUeD4Omsl3VuauljOJ3BaKzHpELRHbv6TShN7f8YeIuYWG+8UV7vRFXgNXlHvK4cm5l70KdQHduoXrrRh74QuNnLmoX8KSLvldc09uXbmEoC4jbHUPPi/3LQDWpT0gk306wObCSdbCDXhQi6x8OYtTELhs3bNBJmlTLe0PxzQlTadg48dE38DbdUReQf5XozwxexiDMAAAAASUVORK5CYII="/>
+                        <image id="Icon_3" data-name="Icon_3"  width="60" height="60" xlink:href="data:img/png;base64,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"/>
+                        <image id="Icon_4" data-name="Icon_4"  width="60" height="60" xlink:href="data:img/png;base64,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"/>
+                        <image id="Icon_5" data-name="Icon_5"  width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAA8CAYAAACelmGhAAADCUlEQVRYhe1Z0W3bMBA9G/mXR3A2cKAB6gwgxJkgzQSxJ3A6gdMJnExgBxwg7gBEnQ3cCSpuUNB9FM4MKR1lOU2BPEBIIpF85PHu3ZHpkRBGq3simgtal0R0keXFrqlhX0pORF+E7QZENJQ0PEsg59gE3g2lpEeRZ3lx6b9L2JYKKWbvHJ/kn+TvikaFM1pNiOiOiEYQEBLE+RbPLMuLMja2JM6XjNRh3NBnhOcXEd3HGknM7hN3hhSF25tR0M6ueCEZMIW8zPIitNcHMFqJB/yn3p6y8pHR6kXQTuwj0VAzWg2Rpb6Kp/cWNsy+Z3kR9PggeZv02ABb1VxnebGtJTdaLQOrfSSiZ+vxTeWR0WoMj7/BTwdrhUs+gZ7X0SdeQ6Ua67HIRCaeSB1MoOc1XLG+32J7lTgBS/zCrLBDgVn2WYMl6/PQBTH9Lbn2qwUpQf+n5FZutJoyVbL7etEFMQd8wYWqndC5E5kb1k4iocmAOj6in7X0pI94rvZDIqFH4Jl1vep74bA+IbFdPR9/fOaRv7pfsEddCM3OKyo2qAcGvrbzeJ4LigYpfrD9rvBeWS14jBJltSwvxKdZB0l++G/y+QGgiguWC2rTZwjHrHzlJSE7mTnMfTpyJCEeCTxPz2EV/i6YFduunGvDDLmAC8gIgjLD9zdhRsfsuQRZXjzUNWu7cm7ShdHqt00Uke9RtL0WWRutNmzfecVqi5ASCesn3gVvp47x9mtbdCDEiGm48/YxJjXwrFKh9Z4jUcxq8v+GeXkwWyaTo+q5g17bwZ9CwgIzn9eNlWR2o9UCquYSxRBxLToYtiaHA00jn6f4ztsPjFYrPMEjVMrKuaKtken4XvpONWFP8MjV1tudI72yd/7qhjXf9ki9HHCYsmORQ3L9J145jjhcow+I/UNgp+SYwK0nLIS/b1OJqU2cZ3lRJyxJ+PhlVEp1wtD4nwmp2bu8pahQZ/ZWFwIRpCUW69lGq6cOiMtYGNaa/cQn1o/l7bYei15Rd4RKGX1yLpknhzX7Sfc1CqLtH0m4+K/yG6HGAAAAAElFTkSuQmCC"/>
+                        <image id="Icon_6" data-name="Icon_6"  width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA4CAYAAABOr/BaAAAFCklEQVRoge1b7XHaTBDeMP4vOgiuwPaogCgFMMEVGFcQXAFxBcYVQCqwPSogcgGaKBVY6UCqIJllnmU2y+kLJMT74meGQT6k0z23H7d3u/5ANZDH4YSIvhDRJT4WCRFFRPTq+ePnOn32iVLSeRxOiWhORKMGY0yJ6N7zx6v/FOk8DlmaS4dUM0j1VbV9wn1Dcy9L/tbzx2n7w94PW6TzOAyI6MmQYKk9ev44KXobnrshoqlq5kn6XPZcH/iHNAb+QzUlkFai7rFSzczv3MeD0pKjI74hDTI/FKGV549v8dsQtj11qDHBjr8T0cLzxxnuf1BSZ+JXx6LqA3W9LCDMA38jolkBYYKj40l5Y0/PxPG8OLMh+j8KDBQxUcdEEf5mJiMDEf79M75XaBdyT+iPcQcTYQSqvVd8ALk3tSyxGiYYoJbOAktRZges1H+mmq95zTZ+IvX88XnvpBF4POHvtVqDxJuS8G2ddddMFE/OOWycSQdov+rbqQ0QaQke8T1XhBd1Aw3ct8CfQyX5R3XbTSsj3wMDvbQoCWive9+w+3tl42uCJjR1hbEHhSa9JmzW4ZXLhsuA+4XkKI9D8RURvoMm/XUBvWRJaKmXpV87vlM/J6SPJhwdVPy+60Bdjur3jn21jrOO+k2Uih9V3E1dkYZdX3fRdxuoUu//Jd5JnwreSZ8K3kmfCt5Jnwr4EOEPuKb4DM3Oq9EuqwQj2Xx4/rhWZqUr6DB05Mhk9L737QInqd5a0nzo980c5PEhfVTwbCPgZHXeLZ16OHlJ9wpomPiVj8a/6COs1BxusLPNcRyV1smi9EYaZ3ETZD2bnJtZhyvPztFvhgl44W/XJPRC2iQXylC2ZLrSw4S2CT78Lj7BedS+6ZCkPXVtCUc4mExwFF3beSIxIRUSF45qifUEgDwnLbKDkEbmY2aaOTHw0kK5hpAUP1AUWzD5yzwOr7ZI8yzncXgn13sOiHDu/aCamORd07Qt+rESrVsWkkHt+f4np6Q9f7xwte+IiSsFXEFQPLlW16I0sSWX4PML3pyFyM/+RJ+BkzRemrWUaNODfTHvEXsMoJ5F1UsupIpcghSzU3uQRIwkXbVFWkdkrP8tZxiXWKqKinOKEIHYb5BrZHaIBje5cZek29pVuTCsCEUl8BBPnu466dCiiaskzOXIOCF/jutD5Z/Yh3zfV6ugRQE0aVJ0nyZ9IRcdkl1gMNbr8nI2QzSVQNqS+7JhJxnTuMB1WVQn+fWNTacV61ub4HX5TtWcTYxdVw2+CRI4Tl4xUtg1CWnxapxLvjxEaQQc0bqiUKnkhSwpO3SZGm/ujLkFZ3Aa4tm+omLoYMAkb020o0jPSXYXUzzjOpE8Dh/wgmkeh/fHUOTWpcbJIYIuhGm7yO1Ty/3tjTVpPiZSHjLQRr8P8jhcGhutG4x0gc3qpI+LdBJ9vi9xELYVgkvUrR0MHKRgLPLe1FYB2yrBzR60AVmpA9XkIiPxCKXUnf0XAMYxhXPWccG1q97bEs9g86syB4etn7xEq/EtnKVL8lJ+9YqYet+ILEC88cWx9GXY0q6KKvsDELeRU6J2ShLUeHiBDW5S1IfaWvB5xVosm4lXR7s9H/PUvrpsb73CEfdaaIXpFajHzCG5KohmLIrMAmvwTUFI2hYS1KBvFQBW5pSUbbhURuMZWvDc0AeMVERWR2ouSLwue+uobAyNE2lV/87QJmAORdjtvUT0FwhXHC1vN3xPAAAAAElFTkSuQmCC"/>
+                        <image id="Icon_7" data-name="Icon_7"  width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAEUUlEQVRogeWa7XHbMAyGX/f6Xx4h2cA5LRAPoGsyQeMJEk/QdoI4E8SZoOl5gLgD+OIN6g1qb9CjD1RoGgCpT7MJfkmmLOERXoIkqAH+A9utFkMALwBGAGZZXkzrep08sAdrbZ7lxaTO/ZIGFmCt1YL+1Jp3LRsDuwbgSvlmt1o8Vn1qssAM7DjLixkAN6qVoZME3q0WI0/G0ywvtuYgy4t5E+gkgbO8MBGdOz/9pJdg22tDp560DMQNnW5J1mun3bS5oMFEdpIIG0d3q8Xf3Wpxr11HzttI75NY00j3HuE6UWkz0r0CM45Z6w26N0kzDv0gxxGZdH47x7Xl3QswAzvJ8uK7iVIMtKCMWtCdA+9WiysGdo634UeF5l5Wk0TWR4TPnOMtzZpK06AFZcybZO9eklYo4eBtdvVCAMaWAC6dS0plgH8ZMYls1hewgfjjwMRCWwvBWuOg7wCU430ffXjIQBzJELy8jS0DsKK86dlfnWvXnUaYWeJtSapXznlMpPf9VurT4LvNNUX2YMXVGbAAu4frok/jGNo1u7zcdiJpoVIxtOehLAte3iosc19rJSy6yNKBsgwCMoyKdJYX44AP9r4HsGgbWJIxgFtPak2hY+beI/8+aBNYiKwEprW1Bs1ZK8CKjA+cTwG6MbAg4w2XnRkwY+dZXmyYtk6gG2Vppc+OnTnzQRZmMmk5IamZvfsp4gkyNpHaUFYMQU9I0v5iolPoWpIODD3lUKBNPgL3Dy4MwMs7uO9UOcKKjK0zI4rKMBTpSFjxf/QCHpyfuFnWgVUCFiJr3vySgb4jp6KhubqUJm+6/ptzfXBXMRpYkfGtAFbKLwZaKsJRn372/6ctJDSL6sOCjFF1aFC6w0iqOApr5K13HgWLGGDFSdQZD4X7uc5rsP61qAKLkKQFGZvJ+7ru0CDI25oGa64/98bwSrDQgJU+e2XBGkI/MU0PkGH3Qx29EJOcrqvCQpM07fvc0emWHnLPSZhxcEp7udK9tZqU/5yjJV4TYyO8Wy3OPNgxvU0/mvtxj4m06Jww9LjyfuwKFoqk/erC3iEGbGMvojbTxy4kqSn7P2O/Xt0FrLHPwu/+EFAa1aQuzDXMPPio0G4tsNl15hXsO4GF1IepT7629XANVktQdZ+nGStpitzR3LjOA1KCRWAcnjhyrgWdGiw0YCZB1YF2q/4nh0XE4mHkJbCq0LZbzFKARWDiwS3Cg04S0JCWjFzbyWChTDyONrFj5E3nr9R247WdHBaKpL84x0vahA72aXJeivrJYaEAP7h7OspigYv0hTvbSgkWgT4s1n9jIVKDRcSwdFAgc5Z+weydIiwqZmlr/j6tn72nNC/ubInXxKS5NPcR2S1XXiEY7rsMa8nAgpN05EdkcD4hWgvLO2OzlGDhRzhU+qR+aSL9K8uLZ3hG7Zf2Ww67SZaSDWJh34sNPhKsscFHggUlrQ8Da8wA2wz67mEB4B/zbuK8uYltRQAAAABJRU5ErkJggg=="/>
+                        <image id="Icon_8" data-name="Icon_8"  width="60" height="60" xlink:href="data:img/png;base64,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"/>
+                        <image id="Icon_9" data-name="Icon_9"  width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA7CAYAAAAuEkmwAAAFRUlEQVRogc1a/3HaTBBdMvlfTgVRKggeFWBTgCamAuMKPlMBoQI7FeBUYDwqwLgAjUkFJh2gCr7MOm+Z5XQS90MivBkGI51092533+7deUBHQlUWd0R0S0RbIhonWb46Rs+9E6zKIiWiRyIaGrfmSZZ/77v/XglWZXFFRAsiOsOlrfqbwVa8SbJ809cYeiFYlQWTYJecqMtMZkxElxbSTHLZx1g6J1iVxRAEtEvuuSPcdgGygvsky6ddj6dTglVZ3MJygg0EZd3QnknP1KU1rGltH4JOCMIl2SJX6vISg90eePYSIqRddppk+cNJEMQAmVyKS1u45L2l3QxWnWriDRP0YLYLQRRBVxdTOVBgzYW+Lu6CIIKY8UdDJGoz3pIDBbVcCJF6VB5BeO+99Q0H4E2wIbfVZL6hHavkV8OatVzYlmZ8XdaLoMXV1ujUa3AekzTBu3Q7rzLPiWCDq9XylksO7POdQQRdZxECMVPtnAQiQqhq3uNF0DUOYnKgeodTLnR17YMEG9yipmQWxbPmQEeSPspcK/PQb21CawRdc1FfZVbX/Q/UA06u5jrTkSSdcmFDFbXn2gPXhhQYAxEkbRrQNOGNhhlYXKJTFYuFp4rXXJsJ/q8uupZbvazdmuCaCy3t5h9gzh0Mcjx7r+oBvjc6Jjn6O6Z1kuXnUEvBrCqLZxhAsDXidjWAD7+qGzcgbfo/wS07EZIWvLBlVGxt9IS26QATVuL3bmERmSFIygOblhVA70iyfADvWaCvkY65hly4VmMWi9NHggtUZTFXpZZJ7ih7mGqg0ucS49vrn4UN49UEdRiN5eJeojdMrF94tA1iVyC1PVuaj3Xa+mjeRCpgF722kdWAG32D1V94xmMqGcQd93kBi/C7fjikorG0N3NyW7G9s6bNglVZLCwiRJgc7uSnK1k1UVcNTcaWtaK24KhpjWha0AkYkCand6xTeMFtVRZM8Amr+DPj3UJ+Yrln4s5MZ674EPIQBiw4T7L8E38jT2l3GkK4ruAN+nOLjya3RJr6Aq8RUiks5o0gC+pBiRvimz9TDObaspYUpCrv8oT84CrKUqw/tbitE0IJ/m67iXhYVWXBCTq1xSIEZXhgf8WsUrwRSlAPNG1SOVjEKjS455xfQ9U5NAZ1Z2lLu1hc4Png8jCUoO6wz5JOYj04twYRNOLma0vTWMjkBa85Y2JQits9C6IQZvVcuWzQQmxEKZdqc1inhV+hgwx1UTKTMw8U1c8bct8z1muNLoyC4Q0rA/68YWXeGYIIYtAiLmKliaV2vTyQxxbGRMk+jISBxPq3UMKhLqqt8oTvJQayxbULTEJbiXWPd73g94UhKCtVBQUhlKBODVLJsBCM1HVzR+4MVl5LbDpsffz6V5XMDh57oRO163W09WV0HnQpglVtKr/v2sRH4XPg+HYIJajlv1UAsMX+bMQtK+WrsSNmPqfTx9ET/Vol30nbQLm5+nvjUXbppdTPkHFSZB6c4/v9rAIzXgOEZIR14xde66nf1goF+VEOVramYPkgWGT43KIqC9m3GSKxW0+XdEVzaBVh2YJ3Pme0IVZFxyq+hoirB+TBlccB6BAT9Z+RgqIPdqIIMoGqLEbG6c5uv6Yqi9BXd/bfTjEx+A4mmWT5GHEVu0Es8Xbe1b9yRSd6gdqmSOFuvgthp9WHLzojKIAydjL7XSCYoFK7GyiqeepzEoiJQalgrtX3SZGjSBedgpRUGXPLAWSfsJ2CdUdQbfTq3zdHItd2urQHJ4IomE8NTisNVwvOHNqcJNpERrYiTh1y5F4HEf0BMTTp4RfT8GgAAAAASUVORK5CYII="/>
+                        <image id="Icon_10" data-name="Icon_10"  width="22" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAgCAYAAAAWl4iLAAACR0lEQVRIiZ1W0XHiQAx9Zu7fXAfQAYwLuKMAzzkVxFQQqMCXCjKpAK6CS2YLgAZ2QgfQQdgK7kbkKbPIXhPQT2Kv9PwkPWnJkLDg3U8A9wDk78h4HQBsAfzJi3LbhdACDt5NADwRUGxHkMDnnGcTPsvZMi/KXRI4eFcDWPFxDeAxL8pDF6PgnWTRAJCYI8HXLeAIVJzuUil2fEDY/wUwBDBX8CxK/42gM5vWF8AlfkPwqcR/45mm3wKNmqgNPNimSUzwbkZygjXNgncVU1nnRTk3oCvWEGwioqb1+d8NyEbsMeH0AmCcF6WkOJX/+a6mT2yKcS+M3yU9BsU1k7S2eVHOEnXdUHbTuHzBO4kbDVhwq4CqK4sEu8q8F6zhQD/UFdknuZ6zE9Ygcfjh8TEEV5/FwD/Me522Gmmrja/aCSuLmvA9L8pjxPaN0prHo4rzKd2Zpku/RAxbGZBXAlfcD2pzTtMqePdAP7Ff/OCRPrFpI18zfmXPF2PDeshNV1E9IOALl471/cTRl4vg3b/g3e++hvSZxBJjAbPd9twH49SqTBkVsuegndjGctN6Pd1AWGM+a24XvSpkduU+3tjxtwNyC+sW2xYwayuSm1Crl9jWlN7a9qVrpJeUVEMJpUCHvPOOjDmzFjC1+UyFLHoIL+jzHOtZre93xT66ww7mbKR3pMrrIuPIlgRuOs4anrVKcJExEvJLyesaxogYxawbc3Y9Y5xfqqrTVdcNfQuwbi3tvDyfbcEuu1QKK7+kvG42kR8leNkA/Ac+oxruXz90qgAAAABJRU5ErkJggg=="/>
+                        <image id="Icon_11" data-name="Icon_11"  width="40" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAD8UlEQVRYhb1Y/03rQAx2Ef8nbwLSCQjKAE0HiEQnoEwATNB2AtoJChOAlAFIB4hemKB9E5BMwJOrz8Vx70LKk56lU5rc+cfZn+27DqgHNWWeElFMRCERjcAh732oJqIK6zbyHiRZ8R3vkYFNmbPSaxgSY7hIC2fljVkTGN7UI6fCYMNfgySrnQY2ZT4lojsjtFbM/NwFSVbRP1BT5iw/gp6RIxIsfxUk2ZM18AMLX2FQYY2Bd1MlPOzwsJB4WjZZWC/B6BQyOXp1kGS/DgbCe2siWgZJ9uDTpDYhtMMQb7/j96VaZz10UO7R8UhE90R0y148w/cbPFcdjLHy8DhIMt4cG7cJkozfJ0GSzTH491i8hrVj8IaQ5SOxYW/ToClzxsMWrh87jIpNwtwqr70hbD6vP4JH5EaIlE6MygGlN4R8OFAufYBiMciXda/AyU+oi7dQOI2wueU5EU3VbjVVJoNnRvjiRONmxtCFiU7qcMqUPfgJgBcAeSEFFOGX0N5hHXs5CpJseIp1TZlvhRdYXokTgiTb0VdDSJFk/AwHOt5gbi0wepaAgwuvKfgJ9bIw86JHZGhqOQgb2ecFh/gZjFvDtFO4kKSQ7Kvoqy7OAJPWZpoyZ6VcbBeoexX0cMeZKHmXeF5jaCg8D6BkjQ+ygwoKZxAaUZsmMPoFcztV4EkVXJmb4PeLxwkLeDFWEWS69R4WmjKfw0DrfikJ7PEQHpr3kDFkT7pw1iXDS4wZJJBL8ZrnmjK3WHKtvcfatWf+E/h00plvArs7Og4hs6dIlKX6zh1iinHAI9awnCl4LRUdNddtoGpFrpOL1EJOLr1+Cyzz2Jp29mx4NVXU1vm9gSpb3x1zF3hyUgjNBEsYoaMwa15NouMkA+XU7Drx7gWZI1OIb3MFdh3mWvMaEh0jx1ynB2up8IYkJBpP0gleeOhvZu0RZKCjPtWDscd7TH/w1MBewCAptjvTq1PDa6nobSDqFHnwRwpPB4yxF9CbxzgrDo33Z4bX0rvR7TdQ7dbpQSjm0hHZ2sb919GD1+giSw9ktK4jA88di6XNdF2OFhDGtY3fHxz3jBBHuClkdR3PRNelnXBdOz9wGrnqECgGvElCIXyCsQtgMYTysd2AQ95vHONa95VzsyhSQjsJCq/Qb2/UwVdoh+tj3x7LOmO2QUPBhlgyaUM9CQbM1aWKUKJOvT9vsMlYlyhroBTLkadv9qamzE+9t0iXGels93nQhut/UqseurKYcI/dk7rUP6krAd97fTWtk5AMbMSV47p5dLxzGgjgC93hKX971ADzd395uIjDKBi77gMDa6CAU59EhESYPan8hDgSPhlfxZyI/gLiydwh6FzpqwAAAABJRU5ErkJggg=="/>
+                        <image id="Icon_12" data-name="Icon_12"  width="40" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAaCAYAAADFTB7LAAACOklEQVRYhc3X8VHbMBQG8K89/rc7QcMG7nmBeAAfYYLGEwAThExAOkFgAuA0gMMAOtIJGjaIJmjv9b5HhRCJZeg5usvZ2JL840l6tj45a37jgMuRR9sC+HEg1DMAOQKgXPialXUznAtw1iwVJ+UzjwsAawBTVhgSN6Vl4QMdgGpIZICraHoGIivr7VDIEEcLXgCHQu7CvQL+T6SzJpe+nDWts+ayCy4KfAN5/k7cCEBLzBjAzFnzuA/3JjCCvHLWTHvAxs6aWwC/ABQArgF8YZ8Fq238tNIZGEEuU5CCY9QmbH8HYESsoFY8yv1HmQLJQA95yjdNCnLMo7S9J6QgdsL7DfNd7kU0DUjkhpFMQW54lIfP+PdxVtbSzzfeu4rUTwdGShekPvA7jze6ELKyXnOIC40cg9AP6K1Cica8ZySz4HrOfqKrtzOQk/eWHTZZWV92HG6dgzdEnkv+81Z2wYXzE/8WVRqQuJadCU7ShA7RPqRG7MyL+ixY2Q8ATlgvLQ8GuAvFPT/9NXLitZVzTe5yvmQUL4idc0SWmh/ZXzdggJPGi1i9CLKQHx+85WqtOJQFo6lRHXGhSCk658EIbucHrIcE27U8l9fXOivrVVbWp4zeiMOs9yu+XeRZbQz5ApiKiyBz/qpwyDgKx6wn+XDF680upG6a5szoybjgH9ScFp1Pe9qGH6wyh2e6J8nei+sL89o2zhoQ2er8DLedvXEfVbxI/i3htvNJPyYHLE+0RLedusIOowD4A2CPSqL0mSr9AAAAAElFTkSuQmCC"/>
+                        <image id="Icon_13" data-name="Icon_13"  width="30" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAXCAYAAAAcP/9qAAABVUlEQVRIie2WwVUCMRCGP3gUQAd6zQ0rUCoQKhA6cCtAKoAStAKgArUC19N/lBIowRferG8Nyb4Irl74T9nJm/kys0kmHQDn3AhYAJe0qy1QSFp3DLoCSmAO7FpC94EZMADGHvzhYZKuWs52L+fcm19Ez8o7NuNzhq8vVRkJ6DO6B66tahvg1jJ9BZaSdlbVVc/8qvLeZID7CbvfI5Pa96g29nEvgGnF6gXOwwzwQbamScJen59WHyH4QJJeMhbzY4Xg2D/uZAZd2j9umv9SCJ4fm4Gkwjn3bhvKn9cn4M4270bSYxIs6eFYsPn74HVAaj/QPQV0is7gM7g1fTtOsSYhaeicW1g7q6uw8SKwl3amo7GqcXiBpJrEIDJXNYuUT2PDyW0SRaQrVZdD6LNL2KPgfdBUQ4j135pSPqnmsmd17V6dNa3ul+VZ2/97c3nLn78ypfUnn39pCjm9PW0AAAAASUVORK5CYII="/>
+                        <image id="Icon_14" data-name="Icon_14"  width="14" height="6"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAGCAYAAADzG6+8AAAAMElEQVQYlWOAAU1NzfkMJAAmBoSmBFI0MpKjCQTANpINQLZqamr+J8sAkgKHgYEBAJURB8L/oC9RAAAAAElFTkSuQmCC"/>
+                        <image id="Icon_15" data-name="Icon_15"  width="14" height="6"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAGCAYAAADzG6+8AAAAM0lEQVQYlWMgBWhqas6HKWciSScDQwJMM6OmpuZ/EjWDwAJSbSQPgFyH7E+iAVwTAwMDAA8pCGKxs/ZkAAAAAElFTkSuQmCC">
+                    </svg>
+                    <div class="List" >
+                        <div class="List_container list-1">
+                            <div class="Icon_container">
+
+                                <!--Вызываем по ссылке и id нужный элемент SVG из спрайта-->
+                                <svg>
+                                    <use xlink:href='#Icon_1'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Pet food</div>
+                        </div>
+                        <div class="List_container list-2">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_2'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Transporation</div>
+                        </div>
+                        <div class="List_container list-3">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_3'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Toys</div>
+                        </div>
+                        <div class="List_container list-4">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_4'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Bowls and cups</div>
+                        </div>
+                        <div class="List_container list-5">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_5'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Shampoos</div>
+                        </div>
+                        <div class="List_container list-6">
+                            <div class="Icon_container">
+                                <svg >
+                                    <use xlink:href='#Icon_6'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Vitamins</div>
+                        </div>
+                        <div class="List_container list-7">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_7'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Medicines</div>
+                        </div>
+                        <div class="List_container list-8">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_8'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Collars/leashes</div>
+                        </div>
+                        <div class="List_container list-9">
+                            <div class="Icon_container">
+                                <svg>
+                                    <use xlink:href='#Icon_9'/>
+                                </svg>
+                            </div>
+                            <div class="Text_container">Sleeping area</div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+             <section class="Donation" id="Donation">
+                <div class="Container">
+                    <div class="Container_about_pets">
+                        <div class="Donation_img"></div>
+                        <div class="Text_about">
+                            <h3 class="Left_heading" >You can also <br> make a donation</h3>
+                            <div class="Subheading_about"><p>Name of the bank / Type of bank account</p></div>
+                            <div class="Credit_card">
+                                <div class="Credit_card_ic">
+                                    <svg>
+                                        <use xlink:href='#Icon_13'/>
+                                    </svg>
+                                    </div>
+                                <div class="Number_card">8380 2880 8028 8791 7435</div>
+
+                            </div>
+                            <div class="Text_donation">Legal information and lorem ipsum dolor sit amet, consectetur 
+                                <br> adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac 
+                                <br> diam. Praesent ultrices maximus tortor et vulputate. Interdum et 
+                                <br> malesuada fames ac ante ipsum primis in faucibus.</div>
+                        </div>
+                     </div>
+                </div>
+             </section>
+        </main>
+            <footer class="Footer" id="Footer">
+                <div class="Container footer">
+                    <div class="Contacts">
+                        <h3 class="Heading_left">For questions <br> and suggestions</h3>
+                        <div class="Mail">
+                            <svg class="Icon">
+                                <use xlink:href='#Icon_12'/>
+                             </svg>
+                            <p class="Text">email@shelter.com</p>
+                        </div>
+                        <div class="Phone">
+                            <svg class="Icon">
+                                <use xlink:href='#Icon_11'/>
+                            </svg>
+                            <p class="Text">+13 674 567 75 54</p>
+                        </div>
+                    </div>
+                    <div class="Location">
+                        <h3 class="Heading_left">We are waiting <br/> for your visit</h3>
+                        <div class="Boston">
+                            <svg class="Icon">
+                                <use xlink:href='#Icon_10'/>
+                            </svg>
+                            <p class="Text">1 Central Street, Boston <br/> (entrance from the store)</p>
+                        </div>
+                        <div class="London">
+                            <svg class="Icon">
+                                <use xlink:href='#Icon_10'/>
+                            </svg>
+                            <p class="Text">18 South Park, London </p>
+                        </div>
+                    </div>
+                    <div class="Footer-puppy"></div>
+                </div>
+            </footer>
+        <script>
+             function myFunction(x) {
+             x.classList.toggle("change");
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Сommon_styles.css">
+    <title>Our pets at the shelter</title>
+</head>
+<body>
+    <div class="Wrapper">
+        <header class="Header">
+            <div class="Container">
+                <div class="Header_contant">
+                    <div class="Header_logo logo">
+                        <p class="Title">Cozy House</p>
+                        <p class="Subtitile">Shelter for pets in Boston</p>
+                    </div>
+                    <!--Скрытое меню-гамбургер функцией -->
+                    <div class="Gamburger_menu" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        <div class="Change_box">
+                            <ul class="menu__box" >
+                                <li><a class="menu__item" href="About_the_shelter.html" title="About the shelter">About the shelter</a></li>
+                                <li><a class="menu__item" href="Our_pets.html" title="Our_pets">Our pets</a></li>
+                                <li><a class="menu__item" href="About_the_shelter.html#Help" title="Help the shelter">Help the shelter</a></li>
+                                <li><a class="menu__item" href="Contacts.html" title="Help the shelter">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="Header_navigation navigation">
+                        <div class="Navigation_wrap">
+                            <div class="Navigation_contact">
+                                <ul class="Navigation_menu" >
+                                    <li><a href="About_the_shelter.html" class="Navigation_link" title="About the shelter">About the shelter</a></li>
+                                    <li><a href="Our_pets.html" class="Navigation_link" title="Our pets">Our pets</a></li>
+                                    <li><a href="About_the_shelter.html#Help" class="Navigation_link" title="Help the shelter">Help the shelter</a></li>
+                                    <li><a href="Contacts.html" class="Navigation_link" title="Contacts">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="Pets" id="Pets" >
+                <div class="Container pets">
+                    <h3 class="Heading_center">Our friends who <br> are looking for a house</h3>
+
+                    <!--Контейнер с карточками животных-->
+                    <div class="Container_cards" id="Cards">
+                        <div class="Card card-1" id="Anchor1">
+                            <div class="Pets_image"><img src="Images/pets-katrine.png" alt="pets-katrine" title="Katrine"></div>
+                            <p class="Name_pets">Katrine</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-2">
+                            <div class="Pets_image"><img src="Images/pets-jennifer.png"  alt="pets-jennifer" title="Jennifer"></div>
+                            <p class="Name_pets">Jennifer</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-3">
+                            <div class="Pets_image"><img src="Images/pets-woody.png"  alt="pets-woody" title="Woody"></div>
+                            <p class="Name_pets">Woody</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-4" >
+                            <div class="Pets_image" ><img src="Images/pets-katrine.jpg" alt="pets-sophia" title="Sophia"></div>
+                            <p class="Name_pets">Sophia</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-5">
+                            <div class="Pets_image"><img src="Images/pets-timmy.png" alt="pets-timmy" title="Timmy"></div>
+                            <p class="Name_pets">Timmy</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-6" >
+                            <div class="Pets_image"><img src="Images/pets-charly.jpg" alt="pets-charly" title="Charly"></div>
+                            <p class="Name_pets">Charly</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-7">
+                            <div class="Pets_image"><img src="Images/pets-scarlet.png" alt="pets-scarlet" title="Scarlett"></div>
+                            <p class="Name_pets">Scarlett</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                        <div class="Card card-8">
+                            <div class="Pets_image"><img src="Images/pets-freddie.png" alt="pets-freddie" title="Freddie"></div>
+                            <p class="Name_pets">Freddie</p>
+                            <input type="button" class="Button_for_card" value="Learn more">
+                        </div>
+                    </div>
+                    <div class="Button_navigation">
+                        <button class="button_paginator_inactive">&lt;&lt;</button>
+                        <button class="button_paginator_inactive">&lt;</button>
+                        <div class="button_paginator_active"><p class="Number_of_page">1</p></div>
+                        <form action="Page2.html#page2" target="_self">
+                            <button class="button_paginator">&gt;</button>
+                        </form>
+                            <button class="button_paginator_inactive">&gt;&gt;</button>                   
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="Footer" id="Footer">
+            <div class="Container footer">
+
+                <!--Загружаем на страницу спрайт SVG-->
+                <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="300" viewBox="0 0 500 300 ">
+                    <image id="Icon_10" data-name="Icon_10"  width="22" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAgCAYAAAAWl4iLAAACR0lEQVRIiZ1W0XHiQAx9Zu7fXAfQAYwLuKMAzzkVxFQQqMCXCjKpAK6CS2YLgAZ2QgfQQdgK7kbkKbPIXhPQT2Kv9PwkPWnJkLDg3U8A9wDk78h4HQBsAfzJi3LbhdACDt5NADwRUGxHkMDnnGcTPsvZMi/KXRI4eFcDWPFxDeAxL8pDF6PgnWTRAJCYI8HXLeAIVJzuUil2fEDY/wUwBDBX8CxK/42gM5vWF8AlfkPwqcR/45mm3wKNmqgNPNimSUzwbkZygjXNgncVU1nnRTk3oCvWEGwioqb1+d8NyEbsMeH0AmCcF6WkOJX/+a6mT2yKcS+M3yU9BsU1k7S2eVHOEnXdUHbTuHzBO4kbDVhwq4CqK4sEu8q8F6zhQD/UFdknuZ6zE9Ygcfjh8TEEV5/FwD/Me522Gmmrja/aCSuLmvA9L8pjxPaN0prHo4rzKd2Zpku/RAxbGZBXAlfcD2pzTtMqePdAP7Ff/OCRPrFpI18zfmXPF2PDeshNV1E9IOALl471/cTRl4vg3b/g3e++hvSZxBJjAbPd9twH49SqTBkVsuegndjGctN6Pd1AWGM+a24XvSpkduU+3tjxtwNyC+sW2xYwayuSm1Crl9jWlN7a9qVrpJeUVEMJpUCHvPOOjDmzFjC1+UyFLHoIL+jzHOtZre93xT66ww7mbKR3pMrrIuPIlgRuOs4anrVKcJExEvJLyesaxogYxawbc3Y9Y5xfqqrTVdcNfQuwbi3tvDyfbcEuu1QKK7+kvG42kR8leNkA/Ac+oxruXz90qgAAAABJRU5ErkJggg=="/>
+                    <image id="Icon_11" data-name="Icon_11"  width="40" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAD8UlEQVRYhb1Y/03rQAx2Ef8nbwLSCQjKAE0HiEQnoEwATNB2AtoJChOAlAFIB4hemKB9E5BMwJOrz8Vx70LKk56lU5rc+cfZn+27DqgHNWWeElFMRCERjcAh732oJqIK6zbyHiRZ8R3vkYFNmbPSaxgSY7hIC2fljVkTGN7UI6fCYMNfgySrnQY2ZT4lojsjtFbM/NwFSVbRP1BT5iw/gp6RIxIsfxUk2ZM18AMLX2FQYY2Bd1MlPOzwsJB4WjZZWC/B6BQyOXp1kGS/DgbCe2siWgZJ9uDTpDYhtMMQb7/j96VaZz10UO7R8UhE90R0y148w/cbPFcdjLHy8DhIMt4cG7cJkozfJ0GSzTH491i8hrVj8IaQ5SOxYW/ToClzxsMWrh87jIpNwtwqr70hbD6vP4JH5EaIlE6MygGlN4R8OFAufYBiMciXda/AyU+oi7dQOI2wueU5EU3VbjVVJoNnRvjiRONmxtCFiU7qcMqUPfgJgBcAeSEFFOGX0N5hHXs5CpJseIp1TZlvhRdYXokTgiTb0VdDSJFk/AwHOt5gbi0wepaAgwuvKfgJ9bIw86JHZGhqOQgb2ecFh/gZjFvDtFO4kKSQ7Kvoqy7OAJPWZpoyZ6VcbBeoexX0cMeZKHmXeF5jaCg8D6BkjQ+ygwoKZxAaUZsmMPoFcztV4EkVXJmb4PeLxwkLeDFWEWS69R4WmjKfw0DrfikJ7PEQHpr3kDFkT7pw1iXDS4wZJJBL8ZrnmjK3WHKtvcfatWf+E/h00plvArs7Og4hs6dIlKX6zh1iinHAI9awnCl4LRUdNddtoGpFrpOL1EJOLr1+Cyzz2Jp29mx4NVXU1vm9gSpb3x1zF3hyUgjNBEsYoaMwa15NouMkA+XU7Drx7gWZI1OIb3MFdh3mWvMaEh0jx1ynB2up8IYkJBpP0gleeOhvZu0RZKCjPtWDscd7TH/w1MBewCAptjvTq1PDa6nobSDqFHnwRwpPB4yxF9CbxzgrDo33Z4bX0rvR7TdQ7dbpQSjm0hHZ2sb919GD1+giSw9ktK4jA88di6XNdF2OFhDGtY3fHxz3jBBHuClkdR3PRNelnXBdOz9wGrnqECgGvElCIXyCsQtgMYTysd2AQ95vHONa95VzsyhSQjsJCq/Qb2/UwVdoh+tj3x7LOmO2QUPBhlgyaUM9CQbM1aWKUKJOvT9vsMlYlyhroBTLkadv9qamzE+9t0iXGels93nQhut/UqseurKYcI/dk7rUP6krAd97fTWtk5AMbMSV47p5dLxzGgjgC93hKX971ADzd395uIjDKBi77gMDa6CAU59EhESYPan8hDgSPhlfxZyI/gLiydwh6FzpqwAAAABJRU5ErkJggg=="/>
+                    <image id="Icon_12" data-name="Icon_12"  width="40" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAaCAYAAADFTB7LAAACOklEQVRYhc3X8VHbMBQG8K89/rc7QcMG7nmBeAAfYYLGEwAThExAOkFgAuA0gMMAOtIJGjaIJmjv9b5HhRCJZeg5usvZ2JL840l6tj45a37jgMuRR9sC+HEg1DMAOQKgXPialXUznAtw1iwVJ+UzjwsAawBTVhgSN6Vl4QMdgGpIZICraHoGIivr7VDIEEcLXgCHQu7CvQL+T6SzJpe+nDWts+ayCy4KfAN5/k7cCEBLzBjAzFnzuA/3JjCCvHLWTHvAxs6aWwC/ABQArgF8YZ8Fq238tNIZGEEuU5CCY9QmbH8HYESsoFY8yv1HmQLJQA95yjdNCnLMo7S9J6QgdsL7DfNd7kU0DUjkhpFMQW54lIfP+PdxVtbSzzfeu4rUTwdGShekPvA7jze6ELKyXnOIC40cg9AP6K1Cica8ZySz4HrOfqKrtzOQk/eWHTZZWV92HG6dgzdEnkv+81Z2wYXzE/8WVRqQuJadCU7ShA7RPqRG7MyL+ixY2Q8ATlgvLQ8GuAvFPT/9NXLitZVzTe5yvmQUL4idc0SWmh/ZXzdggJPGi1i9CLKQHx+85WqtOJQFo6lRHXGhSCk658EIbucHrIcE27U8l9fXOivrVVbWp4zeiMOs9yu+XeRZbQz5ApiKiyBz/qpwyDgKx6wn+XDF680upG6a5szoybjgH9ScFp1Pe9qGH6wyh2e6J8nei+sL89o2zhoQ2er8DLedvXEfVbxI/i3htvNJPyYHLE+0RLedusIOowD4A2CPSqL0mSr9AAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="Contacts">
+                    <h3 class="Heading_left">For questions <br> and suggestions</h3>
+                    <div class="Mail">
+
+                        <!--Вызываем по ссылке и id нужный элемент SVG из спрайта-->
+                        <svg class="Icon">
+                            <use xlink:href='#Icon_12'/>
+                        </svg>
+                        <p class="Text">email@shelter.com</p>
+                    </div>
+                    <div class="Phone">
+                        <svg class="Icon">
+                            <use xlink:href='#Icon_11'/>
+                        </svg>
+                        <p class="Text">+13 674 567 75 54</p>
+                    </div>
+                </div>
+                <div class="Location">
+                    <h3 class="Heading_left">We are waiting <br/> for your visit</h3>
+                    <div class="Boston">
+                        <svg class="Icon">
+                            <use xlink:href='#Icon_10'/>
+                        </svg>
+                        <p class="Text">1 Central Street, Boston <br/> (entrance from the store)</p>
+                    </div>
+                    <div class="London">
+                        <svg class="Icon">
+                            <use xlink:href='#Icon_10'/>
+                        </svg>
+                        <p class="Text">18 South Park, London </p>
+                    </div>
+                    
+                </div>
+                <div class="Footer-puppy"></div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        </script>
+</body>
+</html>
